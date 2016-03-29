@@ -35,3 +35,23 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+// Submits contact form
+$("#contact_send").click(function(event) {
+  $.ajax({
+    url: "https://formspree.io/contact@keendly.com",
+    type: "POST",
+    data: JSON.stringify({'name': $('#name').val(), 'email': $('#email').val(), 'message': $('#message').val()}),
+    contentType: "application/json; charset=utf-8",
+    dataType: "json",
+    success: function(data) {
+      $('#success').show()
+      $('#error').hide()
+    }.bind(this),
+    error: function(xhr, status, err) {
+      $('#error').show()
+      $('#success').hide()
+    }.bind(this)
+  });
+  event.preventDefault();
+});
