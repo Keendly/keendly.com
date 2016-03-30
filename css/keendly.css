@@ -161,7 +161,7 @@ h6 {
     background: rgba(0, 0, 0, 0) url("../img/sm.jpg") no-repeat scroll center center / cover;
     color: #f8f8f8;
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 70px;
     text-align: center;
 }
 .navbar-default,
@@ -531,7 +531,7 @@ strike {} .pricing {
     margin-bottom: 5px;
 }
 #feature-a-container {
-    background-color: #f6f8f9;
+    background-color: #f8f8f8;
     display: inline-block;
     width: 100%;
     padding: 75px 0;
@@ -540,7 +540,6 @@ strike {} .pricing {
     max-width: 960px;
     margin: 0 auto;
     text-align: left;
-    padding-bottom: 75px;
 }
 .feature-a-copy {
     float: left;
@@ -608,6 +607,14 @@ strike {} .pricing {
 .feature-a-image img {
     max-width: 100%
 }
+
+#beta-btn-lg {
+  display: block;
+}
+#beta-btn-small {
+  display: none;
+}
+
 /* Mobile Landscape */
 
 @media screen and (max-width: 934px) {
@@ -616,12 +623,19 @@ strike {} .pricing {
         margin: 0 auto;
         with: auto;
     }
+    #feature-a-container {
+      padding: 25px 0;
+    }
     .feature-b {
         text-align: center;
     }
-    .feature-a-image {
-        float: none;
+    #feature-b-container {
+      padding: 25px 0;
     }
+    .feature-a-image {
+        display: none;
+    }
+
     .feature-a-copy {
         float: none;
         padding-left: 20px;
@@ -632,7 +646,7 @@ strike {} .pricing {
         max-width: 100%;
     }
     .feature-b-image {
-        float: none;
+        display: none;
     }
     .feature-b-copy {
         float: none;
@@ -643,14 +657,17 @@ strike {} .pricing {
         line-height: 29px;
         max-width: 100%;
     }
+    .plan {
+        margin: 0px;
+    }
     /* Smartphones (portrait and landscape) ----------- */
 
     @media screen and (max-width: 420px) {
-        .feature-a-image {
-            display: none;
+        #beta-btn-lg {
+          display: none;
         }
-        .feature-b-image {
-            display: none;
+        #beta-btn-small {
+          display: block;
         }
         .feature-a {
             text-align: center;
@@ -686,4 +703,8 @@ strike {} .pricing {
     background-color: #f2dede;
     border-color: #ebccd1;
     color: #a94442;
+}
+
+.share-buttons {
+  margin-bottom: 10px
 }
