@@ -70,13 +70,10 @@ $("#subscribe_btn").click(function(event) {
     dataType: "json",
     success: function(data) {
       $(this).button('reset');
-      console.log(data)
       if (data == 200){
-        console.log('ok') // success
         $('#sub_success').show()
         $('#sub_error').hide()
       } else {
-        console.log('error')
         $('#sub_error').show()
         $('#sub_success').hide()
       }
