@@ -17,8 +17,7 @@
 
     <!-- Custom CSS -->
     <link href="css/keendly.css" rel="stylesheet" type="text/css">
-
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/css.css" rel="stylesheet" type="text/css">
     <link href="css/css_002.css" rel="stylesheet" type="text/css">
 
@@ -202,8 +201,8 @@
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a class="btn btn-default btn-lg" id="beta-btn-lg" href="https://twitter.com/SBootstrap"><span class="network-name">Sign up for Beta and see how it works!</span></a>
-                                <a class="btn btn-default btn-lg" id="beta-btn-small" href="https://twitter.com/SBootstrap"><span class="network-name">Sign up for Beta!</span></a>
+                                <a rel="leanModal" name="signup" href="#signup" class="btn btn-default btn-lg signup-btn" id="beta-btn-lg" type="beta"><span class="network-name">Sign up for Beta and see how it works!</span></a>
+                                <a rel="leanModal" name="signup" href="#signup" class="btn btn-default btn-lg signup-btn" id="beta-btn-small" type="beta"><span class="network-name">Sign up for Beta!</span></a>
                             </li>
                         </ul>
                     </div>
@@ -239,7 +238,7 @@
                     <strike>Trending articles</strike>
                 </div>
                 <div class="plan-btn">
-                    <a class="plan-btn-style" rel="leanModal" name="signup" href="#signup">
+                    <a class="plan-btn-style signup-btn" rel="leanModal" name="signup" href="#signup" type="price-free">
                         Sign me up!
                     </a>
                 </div>
@@ -267,7 +266,7 @@
                     Trending articles
                 </div>
                 <div class="plan-btn">
-                    <a class="plan-btn-style" rel="leanModal" name="signup" href="#signup">
+                    <a class="plan-btn-style signup-btn" rel="leanModal" name="signup" href="#signup" type="price-premium">
                         Sign me up!
                     </a>
                 </div>
@@ -279,7 +278,7 @@
                 </div>
 
                 <div class="plan-price">
-                    <p class="amount"><sup>$</sup>0.001</p>
+                    <p class="amount"><sup>$</sup>0.01</p>
                     <p class="tiny">per article</p>
                 </div>
 
@@ -296,7 +295,7 @@
                     <strike>Feature Four</strike>
                 </div>
                 <div class="plan-btn">
-                    <a class="plan-btn-style" rel="leanModal" name="signup" href="#signup">
+                    <a class="plan-btn-style signup-btn" rel="leanModal" name="signup" href="#signup" type="price-as-you-go">
                         Sign me up!
                     </a>
                 </div>
@@ -312,7 +311,7 @@
                     <h2 class="section-heading">Automatic delivery</h2>
                     <p class="lead">Configure your delivery schedule once, and then sit back and allow Keendly to send your unread articles to your Kindle every day, at the time that suits you best.</p>
                     <div class="feature-button">
-                        <a rel="leanModal" name="signup" href="#signup" class="feature-btn">
+                        <a rel="leanModal" name="signup" href="#signup" class="feature-btn signup-btn" type="feature-automatic-delivery">
                             Sign me up!
                         </a>
                     </div>
@@ -326,13 +325,13 @@
         <div id="feature-b-container">
             <div class="feature-b">
                 <div class="feature-a-image">
-                    <img src="img/people.png" class="img-responsive">
+                    <img src="img/tablet.png" class="img-responsive">
                 </div>
                 <div class="feature-b-copy">
                     <h2 class="section-heading">Connect with your reader</h2>
                     <p class="lead">No matter if you are using Facebook or RSS reader to follow your favorite websites, there is no need to start from scratch. Log in using existing account and setup deliveries in seconds.</p>
                     <div class="feature-button">
-                        <a rel="leanModal" name="signup" href="#signup" class="feature-btn">
+                        <a rel="leanModal" name="signup" href="#signup" class="feature-btn signup-btn" type="feature-your-reader">
                             Sign me up!
                         </a>
                     </div>
@@ -346,7 +345,7 @@
                     <h2 class="section-heading">Enjoy the full article</h2>
                     <p class="lead">Never miss a thing. Keendly will always download the full article for your viewing. Even if the feed contains only partial text, you will receive the full content, and even with images.</p>
                     <div class="feature-button">
-                        <a rel="leanModal" name="signup" href="#signup" class="feature-btn">
+                        <a rel="leanModal" name="signup" href="#signup" class="feature-btn signup-btn" type="feature-full-article">
                             Sign me up!
                         </a>
                     </div>
@@ -362,7 +361,7 @@
     <section id="contact">
         <div class="container">
             <div id="success" class="alert alert-success">Thank you for your feedback. We will contact you shortly!</div>
-            <div id="error" class="alert alert-danger">Error occured :-(, please send your message to <a href="mailto:contact@@keendly.com" target="_top">contact@@keendly.com</a></div>
+            <div id="error" class="alert alert-danger">Error occured :-(, please send your message to <a href="mailto:contact@keendly.com" target="_top">contact@keendly.com</a></div>
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Contact</h2>
@@ -395,7 +394,7 @@
                         <br>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <a name="contact" href="#contact" class="feature-btn" id="contact_send">
+                                <a data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending..." name="contact" href="#contact" class="feature-btn" id="contact_send">
                                   Send
                                 </a>
                             </div>
@@ -420,6 +419,28 @@
         </div>
     </div>
 
+    <div id="signup">
+      <h4>
+      Thank you for your interest!
+      </h4>
+      <div id="sub_success" class="alert alert-success">Email saved.</div>
+      <div id="sub_error" class="alert alert-danger">Error occured :-(, please send your message to <a href="mailto:contact@keendly.com" target="_top">contact@keendly.com</a></div>
+      <p>
+      Please leave us your email, we'll let you know the moment we launch.
+      </p>
+      <form id="subscribe">
+        <div>
+          <input type="email" data-validation-required-message="Please enter your email address." required="" name="sub_email" id="sub_email" placeholder="Email Address" class="form-control">
+        </div>
+        <div>
+          <input type="hidden" id="sub_type">
+        </div>
+        <div style="padding-top: 20px">
+          <a name="subscribe_btn" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Saving..." class="feature-btn" id="subscribe_btn" style="cursor: pointer">Remind me when you launch</a>
+        </div>
+      </form>
+    </div>
+
     <!-- jQuery -->
     <script src="js/jquery_002.js"></script>
 
@@ -429,10 +450,16 @@
     <!-- Plugin JavaScript -->
     <script src="js/jquery.js"></script>
     <script src="js/classie.js"></script>
+    <script src="js/jquery.leanModal.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
+    <!-- Custom JavaScript -->
     <script src="js/keendly.js"></script>
 
+    <script type="text/javascript">
+			$(function() {
+    			$('a[rel*=leanModal]').leanModal({ top : 200, closeButton: ".modal_close" });
+			});
+		</script>
 </body>
 
 </html>

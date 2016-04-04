@@ -38,6 +38,7 @@ $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
 
 // Submits contact form
 $("#contact_send").click(function(event) {
+  $(this).button('loading');
   $.ajax({
     url: "https://formspree.io/contact@keendly.com",
     type: "POST",
@@ -45,13 +46,50 @@ $("#contact_send").click(function(event) {
     contentType: "application/json; charset=utf-8",
     dataType: "json",
     success: function(data) {
+      $(this).button('reset');
       $('#success').show()
       $('#error').hide()
     }.bind(this),
     error: function(xhr, status, err) {
+      $(this).button('reset');
       $('#error').show()
       $('#success').hide()
     }.bind(this)
   });
   event.preventDefault();
+});
+
+// Submits subscribe form
+$("#subscribe_btn").click(function(event) {
+  $(this).button('loading');
+  $.ajax({
+    url: "https://oiw67v9ine.execute-api.eu-west-1.amazonaws.com/prod/subscriber",
+    type: "POST",
+    data: JSON.stringify({'email': $('#sub_email').val(), 'type': $('#sub_type').val()}),
+    contentType: "application/json; charset=utf-8",
+    dataType: "json",
+    success: function(data) {
+      $(this).button('reset');
+      console.log(data)
+      if (data == 200){
+        console.log('ok') // success
+        $('#sub_success').show()
+        $('#sub_error').hide()
+      } else {
+        console.log('error')
+        $('#sub_error').show()
+        $('#sub_success').hide()
+      }
+    }.bind(this),
+    error: function(xhr, status, err) {
+      $(this).button('reset');
+      $('#sub_error').show()
+      $('#sub_success').hide()
+    }.bind(this)
+  });
+  event.preventDefault();
+});
+
+$(".signup-btn").click(function(event) {
+  $('#sub_type').val($(this).attr('type'))
 });
