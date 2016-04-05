@@ -547,11 +547,16 @@ strike {} .pricing {
     padding-right: 50px;
     padding-bottom: 25px;
     padding-top: 10px;
-    max-width: 500px;
+    max-width: 65%;
     line-height: 29px;
 }
 .feature-a-image {
+    float: right;
+    padding-right: 10px
+}
+.feature-b-image {
     float: left;
+    padding-left: 10px
 }
 .feature-button {
     margin-top: 30px;
@@ -578,12 +583,12 @@ strike {} .pricing {
     text-align: left;
 }
 .feature-b-copy {
-    float: left;
+    float: right;
     padding-left: 50px;
     padding-right: 10px;
     padding-bottom: 25px;
     padding-top: 10px;
-    max-width: 500px;
+    max-width: 65%;
     line-height: 29px;
 }
 
@@ -615,6 +620,14 @@ strike {} .pricing {
   display: none;
 }
 
+#subscribe_btn {
+  display: block;
+}
+
+#subscribe_btn_small {
+  display: none;
+}
+
 /* Mobile Landscape */
 
 @media screen and (max-width: 934px) {
@@ -632,31 +645,7 @@ strike {} .pricing {
     #feature-b-container {
       padding: 25px 0;
     }
-    .feature-a-image {
-        display: none;
-    }
 
-    .feature-a-copy {
-        float: none;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 25px;
-        padding-top: 10px;
-        line-height: 29px;
-        max-width: 100%;
-    }
-    .feature-b-image {
-        display: none;
-    }
-    .feature-b-copy {
-        float: none;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 25px;
-        padding-top: 10px;
-        line-height: 29px;
-        max-width: 100%;
-    }
     .plan {
         margin: 0px;
     }
@@ -669,6 +658,12 @@ strike {} .pricing {
         #beta-btn-small {
           display: block;
         }
+        #subscribe_btn {
+          display: none;
+        }
+        #subscribe_btn_small {
+          display: block;
+        }
         .feature-a {
             text-align: center;
             margin: 0 auto;
@@ -677,14 +672,19 @@ strike {} .pricing {
         .feature-b {
             text-align: center;
         }
-        .feature-b-copy {
-            float: left;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-bottom: 25px;
-            padding-top: 10px;
+        .feature-a-image {
+            display: none;
+        }
+        .feature-b-image {
+            display: none;
+        }
+        .feature-a-copy {
             max-width: 100%;
-            line-height: 29px;
+            padding: 10px;
+        }
+        .feature-b-copy {
+            max-width: 100%;
+            padding: 10px;
         }
     }
 }
