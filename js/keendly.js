@@ -58,14 +58,3 @@ $("#contact_send").click(function(event) {
   });
   event.preventDefault();
 });
-
-$(".signup-btn").click(function(event) {
-  var type = $(this).attr('type');
-  $('#sub_type').val(type);
-  ga('send', 'event', {
-    eventCategory: 'Popup Open',
-    eventAction: type,
-    eventLabel: event.target.href
-  });
-
-});
