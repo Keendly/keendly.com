@@ -60,7 +60,7 @@ $("#contact_send").click(function(event) {
 });
 
 // Submits subscribe form
-$("#subscribe_btn").click(function(event) {
+$(".subscribe-btn").click(function(event) {
   $(this).button('loading');
   $.ajax({
     url: "https://oiw67v9ine.execute-api.eu-west-1.amazonaws.com/prod/subscriber",
@@ -71,22 +71,29 @@ $("#subscribe_btn").click(function(event) {
     success: function(data) {
       $(this).button('reset');
       if (data == 200){
-        $('#sub_success').show()
-        $('#sub_error').hide()
+        $('#sub_success').show();
+        $('#sub_error').hide();
       } else {
-        $('#sub_error').show()
-        $('#sub_success').hide()
+        $('#sub_error').show();
+        $('#sub_success').hide();
       }
     }.bind(this),
     error: function(xhr, status, err) {
       $(this).button('reset');
-      $('#sub_error').show()
-      $('#sub_success').hide()
+      $('#sub_error').show();
+      $('#sub_success').hide();
     }.bind(this)
   });
   event.preventDefault();
 });
 
 $(".signup-btn").click(function(event) {
-  $('#sub_type').val($(this).attr('type'))
+  var type = $(this).attr('type');
+  $('#sub_type').val(type);
+  ga('send', 'event', {
+    eventCategory: 'Popup Open',
+    eventAction: type,
+    eventLabel: event.target.href
+  });
+
 });
