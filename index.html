@@ -10,7 +10,7 @@
     <meta name="keywords" content="Kindle,RSS,Facebook,Feedly,Inoreader">
     <meta name="author" content="Keendly">
 
-    <title>Keendly - Your favorite sites as magazine</title>
+    <title>Keendly - Your favorite sites as Kindle magazine</title>
     <link href="img/favicon.png" type="image/png" rel="shortcut icon">
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
@@ -199,8 +199,8 @@
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a rel="leanModal" name="signup" href="https://app.keendly.com" class="btn btn-default btn-lg signup-btn" id="beta-btn-lg" type="beta"><span class="network-name">Sign in and see how it works!</span></a>
-                                <a rel="leanModal" name="signup" href="https://app.keendly.com" class="btn btn-default btn-lg signup-btn" id="beta-btn-small" type="beta"><span class="network-name">Sign in!</span></a>
+                                <a name="signup" href="https://app.keendly.com" class="btn btn-default btn-lg signup-btn" id="beta-btn-lg" type="beta"><span class="network-name">Sign in and see how it works!</span></a>
+                                <a name="signup" href="https://app.keendly.com" class="btn btn-default btn-lg signup-btn" id="beta-btn-small" type="beta"><span class="network-name">Sign in!</span></a>
                             </li>
                         </ul>
                     </div>
@@ -217,7 +217,7 @@
                     <h2 class="section-heading">Automatic delivery</h2>
                     <p class="lead">Schedule your deliveries and Keendly will do the rest. Sit back and enjoy the latest headlines as Keendly sends unread articles to your Kindle every day, at the time that suits you best.</p>
                     <div class="feature-button">
-                        <a rel="leanModal" name="signup" href="https://app.keendly.com" class="feature-btn signup-btn" type="feature-automatic-delivery">
+                        <a name="signup" href="https://app.keendly.com" class="feature-btn signup-btn" type="feature-automatic-delivery">
                             Sign in!
                         </a>
                     </div>
@@ -237,7 +237,7 @@
                     <h2 class="section-heading">Seamless setup</h2>
                     <p class="lead">Whether you're using social media or RSS to follow your favorite websites, there is no need to start from scratch. Log in using existing account and setup deliveries in seconds.</p>
                     <div class="feature-button">
-                        <a rel="leanModal" name="signup" href="https://app.keendly.com" class="feature-btn signup-btn" type="feature-your-reader">
+                        <a name="signup" href="https://app.keendly.com" class="feature-btn signup-btn" type="feature-your-reader">
                             Sign in!
                         </a>
                     </div>
@@ -251,7 +251,7 @@
                     <h2 class="section-heading">Always full articles</h2>
                     <p class="lead">Keendly will download the full article even if the feed contains only partial text. You will always receive the full content, including images.</p>
                     <div class="feature-button">
-                        <a rel="leanModal" name="signup" href="https://app.keendly.com" class="feature-btn signup-btn" type="feature-full-article">
+                        <a name="signup" href="https://app.keendly.com" class="feature-btn signup-btn" type="feature-full-article">
                             Sign in!
                         </a>
                     </div>
@@ -325,30 +325,6 @@
         </div>
     </div>
 
-    <div id="signup">
-      <h4>
-      Thank you for your interest!
-      </h4>
-      <div id="sub_success" class="alert alert-success">Email saved.</div>
-      <div id="sub_error" class="alert alert-danger">Error occured :-(, please send your message to <a href="mailto:contact@keendly.com" target="_top">contact@keendly.com</a></div>
-      <p>
-      Please leave us your email, we'll let you know the moment we launch.
-      </p>
-      <form id="subscribe">
-        <div>
-          <input type="email" data-validation-required-message="Please enter your email address." required="" name="sub_email" id="sub_email" placeholder="Email Address" class="form-control">
-        </div>
-        <div>
-          <input type="hidden" id="sub_type">
-        </div>
-        <div style="padding-top: 20px; padding-bottom: 20px">
-          <a name="subscribe_btn" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Saving..." class="feature-btn subscribe-btn" id="subscribe_btn" style="cursor: pointer">Remind me when you launch</a>
-          <a name="subscribe_btn" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Saving..." class="feature-btn subscribe-btn" id="subscribe_btn_small" style="cursor: pointer">Sign me up</a>        </div>
-      </form>
-      You can also follow us <a href="https://www.facebook.com/KeendlyApp/"><img src="img/facebook.png"></a>
-      <a href="https://twitter.com/KeendlyApp"><img src="img/twitter.png"></a>
-    </div>
-
     <!-- jQuery -->
     <script src="js/jquery_002.js"></script>
 
@@ -358,16 +334,9 @@
     <!-- Plugin JavaScript -->
     <script src="js/jquery.js"></script>
     <script src="js/classie.js"></script>
-    <script src="js/jquery.leanModal.min.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="js/keendly.js"></script>
-
-    <script type="text/javascript">
-			$(function() {
-    			$('a[rel*=leanModal]').leanModal({ top : 200, closeButton: ".modal_close" });
-			});
-		</script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -59,34 +59,6 @@ $("#contact_send").click(function(event) {
   event.preventDefault();
 });
 
-// Submits subscribe form
-$(".subscribe-btn").click(function(event) {
-  $(this).button('loading');
-  $.ajax({
-    url: "https://oiw67v9ine.execute-api.eu-west-1.amazonaws.com/prod/subscriber",
-    type: "POST",
-    data: JSON.stringify({'email': $('#sub_email').val(), 'type': $('#sub_type').val()}),
-    contentType: "application/json; charset=utf-8",
-    dataType: "json",
-    success: function(data) {
-      $(this).button('reset');
-      if (data == 200){
-        $('#sub_success').show();
-        $('#sub_error').hide();
-      } else {
-        $('#sub_error').show();
-        $('#sub_success').hide();
-      }
-    }.bind(this),
-    error: function(xhr, status, err) {
-      $(this).button('reset');
-      $('#sub_error').show();
-      $('#sub_success').hide();
-    }.bind(this)
-  });
-  event.preventDefault();
-});
-
 $(".signup-btn").click(function(event) {
   var type = $(this).attr('type');
   $('#sub_type').val(type);
