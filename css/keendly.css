@@ -301,9 +301,7 @@ section.success a.active {
 form .row:first-child .floating-label-form-group {
     border-top: 1px solid #eeeeee;
 }
-.footer {
-    text-align: center;
-}
+
 .btn-social {
     display: inline-block;
     height: 50px;
@@ -602,6 +600,9 @@ strike {} .pricing {
 .footer {
     max-width: 960px;
     margin: 0 auto;
+    font-weight: normal;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .feature-a-image {
     width: 35%
@@ -626,6 +627,31 @@ strike {} .pricing {
 
 #subscribe_btn_small {
   display: none;
+}
+
+#footer-links-small a {
+  list-style: none;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  color: white;
+  display: none;
+}
+
+#footer-links {
+  margin-top: 30px;
+  display: block;
+}
+
+#footer-links a {
+  font-size: 15px;
+  font-family: "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
+  color: white;
+  margin-right: 30px;
+  text-align: left;
+}
+
+#footer-links a:hover {
+  text-decoration: underline;
 }
 
 /* Mobile Landscape */
@@ -685,6 +711,12 @@ strike {} .pricing {
         .feature-b-copy {
             max-width: 100%;
             padding: 10px;
+        }
+        #footer-links-small a {
+          display: list-item;
+        }
+        #footer-links {
+          display: none;
         }
     }
 }
@@ -748,4 +780,17 @@ strike {} .pricing {
 
 #sub_email {
   text-align: center;
+}
+
+.left {
+    float: left !important
+}
+
+.right {
+  float: right !important
+}
+
+.footer-copyright {
+    text-align: right;
+    margin-top: 20px
 }
