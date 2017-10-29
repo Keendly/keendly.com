@@ -31,6 +31,7 @@
 
     <style class="firebugResetStyles" type="text/css" charset="utf-8">
         /* See license.txt for terms of usage */
+
         /** reset styling **/
 
         .firebugResetStyles {
@@ -55,59 +56,73 @@
             pointer-events: none !important;
             white-space: normal !important;
         }
+
         style.firebugResetStyles {
             display: none !important;
         }
+
         .firebugBlockBackgroundColor {
             background-color: transparent !important;
         }
+
         .firebugResetStyles:before,
         .firebugResetStyles:after {
             content: "" !important;
         }
+
         /**actual styling to be modified by firebug theme**/
 
         .firebugCanvas {
             display: none !important;
         }
+
         /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
         .firebugLayoutBox {
             width: auto !important;
             position: static !important;
         }
+
         .firebugLayoutBoxOffset {
             opacity: 0.8 !important;
             position: fixed !important;
         }
+
         .firebugLayoutLine {
             opacity: 0.4 !important;
             background-color: #000000 !important;
         }
+
         .firebugLayoutLineLeft,
         .firebugLayoutLineRight {
             width: 1px !important;
             height: 100% !important;
         }
+
         .firebugLayoutLineTop,
         .firebugLayoutLineBottom {
             width: 100% !important;
             height: 1px !important;
         }
+
         .firebugLayoutLineTop {
             margin-top: -1px !important;
             border-top: 1px solid #999999 !important;
         }
+
         .firebugLayoutLineRight {
             border-right: 1px solid #999999 !important;
         }
+
         .firebugLayoutLineBottom {
             border-bottom: 1px solid #999999 !important;
         }
+
         .firebugLayoutLineLeft {
             margin-left: -1px !important;
             border-left: 1px solid #999999 !important;
         }
+
         /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
         .firebugLayoutBoxParent {
@@ -118,9 +133,11 @@
             position: fixed !important;
             width: auto !important;
         }
+
         .firebugRuler {
             position: absolute !important;
         }
+
         .firebugRulerH {
             top: -15px !important;
             left: 0 !important;
@@ -131,6 +148,7 @@
             border-right: 1px dashed #BBBBBB !important;
             border-bottom: 1px solid #000000 !important;
         }
+
         .firebugRulerV {
             top: 0 !important;
             left: -15px !important;
@@ -141,12 +159,15 @@
             border-right: 1px solid #000000 !important;
             border-bottom: 1px dashed #BBBBBB !important;
         }
-        .overflowRulerX > .firebugRulerV {
+
+        .overflowRulerX>.firebugRulerV {
             left: 0 !important;
         }
-        .overflowRulerY > .firebugRulerH {
+
+        .overflowRulerY>.firebugRulerH {
             top: 0 !important;
         }
+
         /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
         .fbProxyElement {
@@ -168,7 +189,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img style="vertical-align: middle; width: 200px" src="img/tran.png">
+                <a class="navbar-brand" href="/">
+                    <img style="vertical-align: middle; width: 200px" src="img/tran.png">
                 </a>
             </div>
 
@@ -199,8 +221,12 @@
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a name="signup" href="https://app.keendly.com" class="btn btn-default btn-lg signup-btn" id="beta-btn-lg" type="beta"><span class="network-name">Sign in and see how it works!</span></a>
-                                <a name="signup" href="https://app.keendly.com" class="btn btn-default btn-lg signup-btn" id="beta-btn-small" type="beta"><span class="network-name">Sign in!</span></a>
+                                <a name="signup" href="https://app.keendly.com" class="btn btn-default btn-lg signup-btn" id="beta-btn-lg" type="beta">
+                                    <span class="network-name">Sign in and see how it works!</span>
+                                </a>
+                                <a name="signup" href="https://app.keendly.com" class="btn btn-default btn-lg signup-btn" id="beta-btn-small" type="beta">
+                                    <span class="network-name">Sign in!</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -215,7 +241,8 @@
             <div class="feature-a">
                 <div class="feature-a-copy">
                     <h2 class="section-heading">Automatic delivery</h2>
-                    <p class="lead">Schedule your deliveries and Keendly will do the rest. Sit back and enjoy the latest headlines as Keendly sends unread articles to your Kindle every day, at the time that suits you best.</p>
+                    <p class="lead">Schedule your deliveries and Keendly will do the rest. Sit back and enjoy the latest headlines as Keendly
+                        sends unread articles to your Kindle every day, at the time that suits you best.</p>
                     <div class="feature-button">
                         <a name="signup" href="https://app.keendly.com" class="feature-btn signup-btn" type="feature-automatic-delivery">
                             Sign in!
@@ -231,11 +258,12 @@
         <div id="feature-b-container">
             <div class="feature-b">
                 <div class="feature-b-image">
-                    <img src="img/tablet.png" class="img-responsive">
+                    <img src="img/RSS.png" class="img-responsive">
                 </div>
                 <div class="feature-b-copy">
                     <h2 class="section-heading">Seamless setup</h2>
-                    <p class="lead">Whether you're using social media or RSS to follow your favorite websites, there is no need to start from scratch. Log in using existing account and setup deliveries in seconds.</p>
+                    <p class="lead">There is no need to start from scratch. Thanks to our integrations, you can log in using your existing
+                        account and setup deliveries in seconds.</p>
                     <div class="feature-button">
                         <a name="signup" href="https://app.keendly.com" class="feature-btn signup-btn" type="feature-your-reader">
                             Sign in!
@@ -249,7 +277,8 @@
             <div class="feature-a">
                 <div class="feature-a-copy ">
                     <h2 class="section-heading">Always full articles</h2>
-                    <p class="lead">Keendly will download the full article even if the feed contains only partial text. You will always receive the full content, including images.</p>
+                    <p class="lead">Keendly will download the full article even if the feed contains only partial text. You will always receive
+                        the full content, including images.</p>
                     <div class="feature-button">
                         <a name="signup" href="https://app.keendly.com" class="feature-btn signup-btn" type="feature-full-article">
                             Sign in!
@@ -261,13 +290,33 @@
                 </div>
             </div>
         </div>
+
+        <div id="feature-b-container">
+            <div class="feature-b">
+                <div class="feature-b-image">
+                    <img src="img/Hand-click.png" class="img-responsive">
+                </div>
+                <div class="feature-b-copy">
+                    <h2 class="section-heading">Interactive ebooks</h2>
+                    <p class="lead">Our magazines are not read-only. You can save articles for later are mark them as read directly from
+                        your Kindle.</p>
+                    <div class="feature-button">
+                        <a name="signup" href="https://app.keendly.com" class="feature-btn signup-btn" type="feature-your-reader">
+                            Sign in!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact -->
     <section id="contact">
         <div class="container">
             <div id="success" class="alert alert-success">Thank you for your feedback. We will contact you shortly!</div>
-            <div id="error" class="alert alert-danger">Error occured :-(, please send your message to <a href="mailto:contact@keendly.com" target="_top">contact@keendly.com</a></div>
+            <div id="error" class="alert alert-danger">Error occured :-(, please send your message to
+                <a href="mailto:contact@keendly.com" target="_top">contact@keendly.com</a>
+            </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Contact</h2>
@@ -286,22 +335,25 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Email Address</label>
-                                <input type="email" data-validation-required-message="Please enter your email address." required="" id="email" placeholder="Email Address" class="form-control">
+                                <input type="email" data-validation-required-message="Please enter your email address." required="" id="email" placeholder="Email Address"
+                                    class="form-control">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Message</label>
-                                <textarea data-validation-required-message="Please enter a message." required="" id="message" placeholder="Message" class="form-control" rows="5"></textarea>
+                                <textarea data-validation-required-message="Please enter a message." required="" id="message" placeholder="Message" class="form-control"
+                                    rows="5"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <br>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <a data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending..." name="contact" href="#contact" class="feature-btn" id="contact_send">
-                                  Send
+                                <a data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending..." name="contact" href="#contact" class="feature-btn"
+                                    id="contact_send">
+                                    Send
                                 </a>
                             </div>
                         </div>
@@ -328,9 +380,15 @@
             </div>
             <div class="right">
                 <div class="share-buttons">
-                    <a href="https://www.facebook.com/KeendlyApp/" target="_blank"><img src="img/facebook.png"></a>
-                    <a href="https://twitter.com/KeendlyApp" target="_blank"><img src="img/twitter.png"></a>
-                    <a href="mailto:contact@@keendly.com"><img src="img/gmail.png"></a>
+                    <a href="https://www.facebook.com/KeendlyApp/" target="_blank">
+                        <img src="img/facebook.png">
+                    </a>
+                    <a href="https://twitter.com/KeendlyApp" target="_blank">
+                        <img src="img/twitter.png">
+                    </a>
+                    <a href="mailto:contact@@keendly.com">
+                        <img src="img/gmail.png">
+                    </a>
                 </div>
                 <div class="footer-copyright">© 2017 Keendly</div>
             </div>
@@ -351,13 +409,15 @@
     <script src="js/keendly.js"></script>
 
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-      ga('create', 'UA-76042310-1', 'auto');
-      ga('send', 'pageview');
+        ga('create', 'UA-76042310-1', 'auto');
+        ga('send', 'pageview');
 
     </script>
 </body>
