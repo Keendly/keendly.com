@@ -175,6 +175,13 @@
             pointer-events: auto !important;
         }
     </style>
+    <link rel="stylesheet" href="https://cdn.plyr.io/2.0.17/plyr.css">
+    <style>
+        .plyr__video-embed {
+            padding-bottom: 58.15%;
+            padding-top: 1.9%;
+        }
+    </style>
 </head>
 
 <body id="page-top" class="index">
@@ -201,6 +208,9 @@
                     </li>
                     <li class="page-scroll">
                         <a highlight="" href="#features">Features</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a highlight="" href="#demo">Demo</a>
                     </li>
                     <li class="page-scroll">
                         <a highlight="" href="#contact">Contact</a>
@@ -307,6 +317,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="demo">
+        <div id="demo-container">
+            <div data-type="vimeo" data-video-id="241325272"></div>
         </div>
     </section>
 
@@ -420,6 +436,8 @@
         ga('send', 'pageview');
 
     </script>
+    <script src="https://cdn.plyr.io/2.0.17/plyr.js"></script>
+    <script>plyr.setup();</script>
 </body>
 
 </html>

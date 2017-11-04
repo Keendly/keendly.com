@@ -149,8 +149,18 @@ h6 {
   width: 100px;
 }
 #contact {
-  background-color: #f8f8f8;
   padding: 20px;
+}
+
+#demo {
+  background-color: #f8f8f8;
+}
+
+#demo-container {
+  margin: auto;
+  max-width: 992px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .navbar-default {
   background-color: #f8f8f8;
