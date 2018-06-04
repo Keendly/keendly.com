@@ -153,7 +153,7 @@ h6 {
 }
 
 #demo {
-  background-color: #f8f8f8;
+  background-color: #ffffff;
 }
 
 #demo-container {
@@ -162,6 +162,21 @@ h6 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+#pricing .container {
+  margin: auto;
+  max-width: 992px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#pricing {
+  background-color: #f8f8f8;
+}
+
+#contact {
+  background-color: #f8f8f8;
+}
+
 .navbar-default {
   background-color: #f8f8f8;
 }
