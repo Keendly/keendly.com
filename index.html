@@ -235,10 +235,11 @@
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a name="signup" href="https://app.keendly.com" class="btn btn-default btn-lg signup-btn" id="beta-btn-lg" type="beta">
+                                <a name="signup" data-toggle="modal" data-target="#myModal" class="btn btn-default btn-lg signup-btn" id="beta-btn-lg" type="beta">
                                     <span class="network-name">Sign in and see how it works!</span>
                                 </a>
-                                <a name="signup" href="https://app.keendly.com" class="btn btn-default btn-lg signup-btn" id="beta-btn-small" type="beta">
+                                <a name="signup" data-toggle="modal" data-target="#myModal" class="btn btn-default btn-lg signup-btn" id="beta-btn-small"
+                                    type="beta">
                                     <span class="network-name">Sign in!</span>
                                 </a>
                             </li>
@@ -258,7 +259,7 @@
                     <p class="lead">Schedule your deliveries and Keendly will do the rest. Sit back and enjoy the latest headlines as Keendly
                         sends unread articles to your Kindle every day, at the time that suits you best.</p>
                     <div class="feature-button">
-                        <a name="signup" href="https://app.keendly.com" class="feature-btn signup-btn" type="feature-automatic-delivery">
+                        <a name="signup" data-toggle="modal" data-target="#myModal" class="feature-btn signup-btn" type="feature-automatic-delivery">
                             Sign in!
                         </a>
                     </div>
@@ -280,7 +281,7 @@
                         Inoreader, The Old Reader and Newsblur), you can log in using your existing account and setup deliveries
                         in seconds.</p>
                     <div class="feature-button">
-                        <a name="signup" href="https://app.keendly.com" class="feature-btn signup-btn" type="feature-your-reader">
+                        <a name="signup" data-toggle="modal" data-target="#myModal" class="feature-btn signup-btn" type="feature-your-reader">
                             Sign in!
                         </a>
                     </div>
@@ -295,7 +296,7 @@
                     <p class="lead">Keendly will download the full article even if the feed contains only partial text. You will always receive
                         the full content, including images.</p>
                     <div class="feature-button">
-                        <a name="signup" href="https://app.keendly.com" class="feature-btn signup-btn" type="feature-full-article">
+                        <a name="signup" data-toggle="modal" data-target="#myModal" class="feature-btn signup-btn" type="feature-full-article">
                             Sign in!
                         </a>
                     </div>
@@ -314,9 +315,10 @@
                 <div class="feature-b-copy">
                     <h2 class="section-heading">Interactive ebooks</h2>
                     <p class="lead">Our magazines are not read-only. You can save articles for later or mark them as read directly from your
-                        Kindle.</p>
+                        Kindle.
+                    </p>
                     <div class="feature-button">
-                        <a name="signup" href="https://app.keendly.com" class="feature-btn signup-btn" type="feature-your-reader">
+                        <a name="signup" data-toggle="modal" data-target="#myModal" class="feature-btn signup-btn" type="feature-your-reader">
                             Sign in!
                         </a>
                     </div>
@@ -375,7 +377,7 @@
                             </ul>
                         </div>
                         <div class="generic_price_btn clearfix">
-                            <a class="" href="https://app.keendly.com">Sign in!</a>
+                            <a class="" data-toggle="modal" data-target="#myModal">Sign in!</a>
                         </div>
 
                     </div>
@@ -428,7 +430,7 @@
                         </div>
 
                         <div class="generic_price_btn clearfix">
-                            <a class="" href="https://app.keendly.com">Sign in!</a>
+                            <a class="" data-toggle="modal" data-target="#myModal">Sign in!</a>
                         </div>
 
                     </div>
@@ -558,6 +560,28 @@
     </script>
     <script src="https://cdn.plyr.io/2.0.17/plyr.js"></script>
     <script>plyr.setup();</script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Keendly is dead</h4>
+                </div>
+                <div class="modal-body">
+                    We are sorry to say that Keendly is no longer working, we had to shut down the service. For more information, visit our
+                    <a href="http://blog.keendly.com/product/shutting-down/">blog</a>.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
